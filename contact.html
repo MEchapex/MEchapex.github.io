@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | MECHAPEX Engineering Solutions</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">MECH<span>A</span>PEX</a>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+          <div class="mobile-menu" id="mobileMenu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact MECHAPEX</h1>
+        <p>Get in touch with our team for your engineering needs</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Head Office</h3>
+                <p>Plot No.29 Manjunath Colony 1st Main, Shivagiri, Dharwad</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-users"></i>
+              <div>
+                <h3>Leadership Team</h3>
+                <p>Nritiya Dave - Head HR and Business Development</p>
+                <p>Anand Gangadhar - Head of Design Department</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>Business enquiries: <strong>info@mechapex.com</strong></p>
+                <p>
+                  Career opportunities: <strong>career@mechapex.com</strong>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>+91 XXXXX XXXXX (Business)</p>
+                <p>+91 XXXXX XXXXX (HR)</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>Saturday: 10:00 AM - 2:00 PM</p>
+                <p>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" />
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" />
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Interested In</label>
+                <select id="service">
+                  <option value="">Select a service</option>
+                  <option value="design">Engineering Design Services</option>
+                  <option value="structural">Structural Steel & Piping</option>
+                  <option value="system">System Engineering</option>
+                  <option value="staffing">HR Consultancy & Staffing</option>
+                  <option value="cae">CAE & Virtual Validation</option>
+                  <option value="documentation">Documentation & Quality</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <h2>Our Location</h2>
+        <div class="map-container">
+          <!-- Placeholder for Google Map -->
+          <div class="map-placeholder">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Map would be displayed here</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <!-- Same footer as index.html -->
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
