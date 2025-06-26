@@ -79,8 +79,8 @@
               <i class="fas fa-phone-alt"></i>
               <div>
                 <h3>Phone</h3>
-                <p>+91 XXXXX XXXXX (Business)</p>
-                <p>+91 XXXXX XXXXX (HR)</p>
+                <p>+91 78292 07007 (Business)</p>
+                <p>+91 98414 13197 (HR)</p>
               </div>
             </div>
 
@@ -89,69 +89,55 @@
               <div>
                 <h3>Business Hours</h3>
                 <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p>Saturday: 10:00 AM - 2:00 PM</p>
-                <p>Sunday: Closed</p>
+                <p>Saturday | Sunday: Closed</p>
               </div>
             </div>
           </div>
 
           <div class="contact-form">
             <h2>Send Us a Message</h2>
-            <form id="contactForm">
+            <form
+              action="https://formspree.io/f/mnnvoyrq"
+              method="POST"
+              id="contactForm"
+            >
               <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" required />
+                <input type="text" id="name" name="name" required />
               </div>
 
               <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" required />
+                <input type="email" id="email" name="email" required />
               </div>
 
               <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" />
+                <input type="tel" id="phone" name="phone" />
               </div>
 
               <div class="form-group">
                 <label for="company">Company</label>
-                <input type="text" id="company" />
-              </div>
-
-              <div class="form-group">
-                <label for="service">Service Interested In</label>
-                <select id="service">
-                  <option value="">Select a service</option>
-                  <option value="design">Engineering Design Services</option>
-                  <option value="structural">Structural Steel & Piping</option>
-                  <option value="system">System Engineering</option>
-                  <option value="staffing">HR Consultancy & Staffing</option>
-                  <option value="cae">CAE & Virtual Validation</option>
-                  <option value="documentation">Documentation & Quality</option>
-                </select>
+                <input type="text" id="company" name="company" />
               </div>
 
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea id="message" rows="5" required></textarea>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
               </div>
 
+              <input
+                type="hidden"
+                name="_redirect"
+                value="https://mechapex.github.io/index.html"
+              />
               <button type="submit" class="btn">Send Message</button>
             </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="map-section">
-      <div class="container">
-        <h2>Our Location</h2>
-        <div class="map-container">
-          <!-- Placeholder for Google Map -->
-          <div class="map-placeholder">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Map would be displayed here</p>
           </div>
         </div>
       </div>
@@ -160,7 +146,62 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <!-- Same footer as index.html -->
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="index.html" class="footer-logo">MECH<span>A</span>PEX</a>
+            <p>
+              Providing innovative engineering solutions across diverse
+              industries with a commitment to quality and excellence.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="industries.html">Industries</a></li>
+              <li><a href="why-choose-us.html">Why Choose Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="services.html">Engineering Design</a></li>
+              <li><a href="services.html">Structural Steel</a></li>
+              <li><a href="services.html">System Engineering</a></li>
+              <li><a href="services.html">CAE & Validation</a></li>
+              <li><a href="services.html">Documentation</a></li>
+              <li><a href="services.html">HR Staffing</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3>Contact Info</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Plot No.29, Shivagiri,
+                Dharwad
+              </li>
+              <li><i class="fas fa-envelope"></i> info@mechapex.com</li>
+              <li><i class="fas fa-phone"></i> +91 XXXXX XXXXX</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; 2023 MECHAPEX Engineering Solutions. All Rights Reserved.
+          </p>
+        </div>
       </div>
     </footer>
 

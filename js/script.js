@@ -28,14 +28,8 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // Form submission handling
-const contactForm = document.getElementById("contactForm");
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("Thank you for your message! We will get back to you soon.");
-    contactForm.reset();
-  });
-}
+//const contactForm = document.getElementById("contactForm");
+// Remove custom JS handler to allow default form submission to Formspree
 
 // Set active navigation link based on current page
 document.addEventListener("DOMContentLoaded", function () {
