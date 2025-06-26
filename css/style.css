@@ -180,7 +180,8 @@ header {
 /* Hero Section */
 .hero {
   background: linear-gradient(rgba(29, 53, 87, 0.85), rgba(29, 53, 87, 0.9)),
-    url("../images/bgHero.jpg") center/cover no-repeat;
+    url("https://github.com/MEchapex/MEchapex.github.io/raw/main/images/bgHero.jpg")
+      center/cover no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -213,7 +214,8 @@ header {
 /* Page Hero */
 .page-hero {
   background: linear-gradient(rgba(29, 53, 87, 0.85), rgba(29, 53, 87, 0.9)),
-    url("../images/bgHero.jpg") center/cover no-repeat;
+    url("https://github.com/MEchapex/MEchapex.github.io/raw/main/images/bgHero.jpg")
+      center/cover no-repeat;
   padding: 140px 0 80px;
   color: white;
   text-align: center;
@@ -406,27 +408,27 @@ header {
 */
 
 .automotive {
-  background-image: url("../images/AUTOMOTIVE.jpg");
+  background-image: url("https://github.com/MEchapex/MEchapex.github.io/raw/main/images/AUTOMOTIVE.jpg");
 }
 
 .agriculture {
-  background-image: url("../images/AGRICULTURE AND FARM EQUIPMENT.jpg");
+  background-image: url("https://github.com/MEchapex/MEchapex.github.io/raw/main/images/AGRICULTURE%20AND%20FARM%20EQUIPMENT.jpg");
 }
 
 .civil {
-  background-image: url("../images/STEEL STRUCTURAL DESIGN.jpg");
+  background-image: url("https://github.com/MEchapex/MEchapex.github.io/raw/main/images/STEEL%20STRUCTURAL%20DESIGN.jpg");
 }
 
 .oil-gas {
-  background-image: url("../images/OIL AND GAS.jpg");
+  background-image: url("https://github.com/MEchapex/MEchapex.github.io/raw/main/images/OIL%20AND%20GAS.jpg");
 }
 
 .medical {
-  background-image: url("../images/MEDICAL EQUIPMENT MANUFACTURERS.jpg");
+  background-image: url("https://github.com/MEchapex/MEchapex.github.io/raw/main/images/MEDICAL%20EQUIPMENT%20MANUFACTURERS.jpg");
 }
 
 .defense {
-  background-image: url("../images/defences.jpg");
+  background-image: url("https://github.com/MEchapex/MEchapex.github.io/raw/main/images/defences.jpg");
 }
 
 .industry-content {
