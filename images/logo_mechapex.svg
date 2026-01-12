@@ -1,0 +1,74 @@
+<svg width="400" height="80" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Industrial Steel Gradient -->
+    <linearGradient id="steelGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5D7ea2;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a252f;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Rust Accent Gradient -->
+    <linearGradient id="rustGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d35400;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Bolt/Rivet Pattern -->
+    <pattern id="boltPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="2" fill="#bdc3c7" opacity="0.5"/>
+    </pattern>
+
+    <!-- Filter for 3D effect -->
+    <filter id="dropshadow" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> <!-- stdDeviation is how much to blur -->
+      <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5"/> <!-- strength of shadow -->
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode/> <!-- this contains the offset blurred image -->
+        <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background (match header dark theme, though transparent is better for flexibility) -->
+  <!-- <rect width="100%" height="100%" fill="#0b0c10" /> -->
+
+  <!-- Main Text Group -->
+  <g font-family="'Arial Black', 'Russo One', sans-serif" font-weight="900" font-size="50" letter-spacing="4" filter="url(#dropshadow)">
+    
+    <!-- Wiring connections (Simple Bezier curves behind text) -->
+    <path d="M40,40 Q60,10 80,40 T120,40 T160,40" fill="none" stroke="#555" stroke-width="2" />
+    <path d="M200,40 Q220,70 240,40 T280,40" fill="none" stroke="#d35400" stroke-width="2" />
+
+    <!-- Text Layer 1: Stroke/border simulation -->
+    <text x="50%" y="60" text-anchor="middle" fill="none" stroke="#7f8c8d" stroke-width="6">MECHAPEX</text>
+
+    <!-- Text Layer 2: Main Fill -->
+    <text x="50%" y="60" text-anchor="middle" fill="url(#steelGradient)">MECHAPEX</text>
+    
+    <!-- Text Layer 3: Rust/Accent Overlay on specific letters (Masking is hard without precise paths, applying to all for texture) -->
+    <text x="50%" y="60" text-anchor="middle" fill="url(#boltPattern)" opacity="0.6">MECHAPEX</text>
+
+    <!-- Rivets (Manual placement approximation) -->
+    <!-- M -->
+    <circle cx="35" cy="30" r="3" fill="#bdc3c7" stroke="#000" stroke-width="1"/>
+    <circle cx="35" cy="55" r="3" fill="#bdc3c7" stroke="#000" stroke-width="1"/>
+    <!-- E -->
+    <circle cx="85" cy="30" r="3" fill="#bdc3c7" stroke="#000" stroke-width="1"/>
+    <!-- C -->
+    <circle cx="135" cy="42" r="3" fill="#bdc3c7" stroke="#000" stroke-width="1"/>
+    <!-- H -->
+    <circle cx="185" cy="30" r="3" fill="#bdc3c7" stroke="#000" stroke-width="1"/>
+    <!-- A (Accent) -->
+    <circle cx="235" cy="30" r="4" fill="#d35400" stroke="#000" stroke-width="1"/>
+    <!-- P -->
+    <circle cx="285" cy="30" r="3" fill="#bdc3c7" stroke="#000" stroke-width="1"/>
+    <!-- E -->
+    <circle cx="335" cy="30" r="3" fill="#bdc3c7" stroke="#000" stroke-width="1"/>
+    <!-- X -->
+    <circle cx="380" cy="30" r="3" fill="#bdc3c7" stroke="#000" stroke-width="1"/>
+
+  </g>
+</svg>
